@@ -1,3 +1,37 @@
+# Table of contents
+
+1. [RAML conventions](#raml-conventions)
+
+    1.1 [Why?](#why?)
+    
+    1.2 [Version](#version)
+    
+    1.3 [No dependencies to outside resources](#no-dependencies-to-outside-resources)
+    
+    1.4 [Directory structure](#directory-structure)
+    
+    1.5 [Specification guidelines](#specification-guidelines)
+    
+    1.6 [Included resources](#included-resources)
+    
+    1.7 [Data Types](#data-types)
+    
+    1.8 [Request and Response bodies](#request-and-response-bodies)
+    
+    1.9 [Naming conventions](#naming-conventions)
+    
+    1.10 [Type reusability](#type-reusability)
+    
+2. [Vision](#vision)
+    
+    2.1 [Draft structure for automated library generation](#draft-structure-for-automated-library-generation)
+    
+    2.2 [Convention improvements](#convention-improvements)
+    
+    2.3 [Naming](#naming)
+    
+    2.4 [Concept](#concept)
+
 # RAML conventions
 
 ## Why?
