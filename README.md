@@ -449,7 +449,7 @@ title: #...
 baseUri: #...
 
 uses:
-  Paysera: https://raw.githubusercontent.com/paysera/lib-raml-common/0.0.2/rest.raml
+  Paysera: https://raw.githubusercontent.com/paysera/lib-raml-common/x.x.x/rest.raml
 types:
   Category: !include types/category.raml
   CategoryResult: !include types/category-result.raml
