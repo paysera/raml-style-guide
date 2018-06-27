@@ -75,6 +75,8 @@ Currently generated structure:
 * Result providers
 * Entity resolvers
 
+Generated code has some `TODO: generated_code` comments, generally these marks business logic or places where it is impossible to generate something automatically. Result should be used to replace boilerplate when creating Bundle for API.
+
 
 ##### `js-generator:package`
 
