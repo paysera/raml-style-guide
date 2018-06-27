@@ -56,6 +56,26 @@ Used to generate PHP REST API Client. Usage: raml-code-generator php-generator:r
 * output_dir - directory where to put generated structure.
 * namespace - the namespace of generated classes.
 
+##### `php-generator:symfony-bundle`
+
+Used to generate Symfony Bundle for given raml definition. Usage: raml-code-generator php-generator:symfony-bundle path_to_raml output_dir namespace. Needed arguments:
+
+* path_to_raml - path to main RAML file.
+* output_dir - directory where to put generated structure.
+* namespace - the namespace for generated Bundle.
+
+Currently generated structure:
+* Entities
+* Controllers
+* Normalizers
+* Routing
+* Services
+* Repositories
+* Rest Api configuration
+* Result providers
+* Entity resolvers
+
+
 ##### `js-generator:package`
 
 Used to generate PHP REST API Client. Usage: raml-code-generator js-generator:package path_to_raml output_dir client_name.  Needed arguments:
