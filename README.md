@@ -2,7 +2,7 @@
 
 1. [RAML conventions](#raml-conventions)
 
-    1.1 [Why?](#why?)
+    1.1 [Why?](#why)
     
     1.2 [Version](#version)
     
@@ -47,6 +47,52 @@ By writing RAML API we always follow rules defined in [REST](https://github.com/
 This tool currently allows to generate PHP and JavaScript REST API Clients. It should be availabe in developer host machine by running raml-code-generator.
 
 #### Commands
+
+##### `release:clients`
+
+This command should be used instead of others described below. It makes a lot of automated tasks for you.
+Needed arguments:
+
+* path_to_config - path to config.json.
+
+Optional arguments (if not provided, you will be asked in terminal):
+
+* --version_constraint - the constraint in terms of semantic versioning. Used in `package.json` and `git tag`. One of `major`, `minor`, `patch`.
+* --commit_message - commit message
+* --changelog_entry - entry in `CHANGELOG.md` according to https://keepachangelog.com/en/1.0.0/. Version block should be skipped as it will be resolved from `version_constraint`.
+
+This command will
+1. clone repository
+1. generate clients from `raml`
+1. update changelog
+1. show you the difference between current and generated files
+1. generate dist files for javascript
+1. create a commit
+1. push commit
+1. create tag
+
+Config format:
+
+```json
+{
+  "SomeApiName": {
+    "raml_file": "path/to/api.raml",
+    "clients": {
+      "javascript": {
+        "repository": "ssh://some.hostname.com/source/js-some-monorepo.git/packages/some-api-client",
+        "library_name": "@vendor/some-api-client",
+        "client_name": "SomeApiClient"
+      },
+      "php": {
+          "repository": "ssh://some.hostname.com/source/some-api-client-dedicated-repo.git",
+          "library_name": "vendor/lib-some-api-client",
+          "namespace": "Vendor\\Client\\SomeApiClient"
+      }
+    }
+  }
+}
+```
+
 
 ##### `php-generator:rest-client`
 
