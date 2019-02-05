@@ -552,7 +552,7 @@ displayName: Category Result
 type: Paysera.Result
 properties:
   items:
-    required: false
+    required: true
     displayName: Categories
     type: array
     items:
