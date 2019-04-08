@@ -150,21 +150,23 @@ Just use Filter from [PayseraCommon RAML library](https://github.com/paysera/lib
 
 ## Directory structure
 
-We put traits, types, examples or other structures in their own directories. Main RAML specification file should be named api.raml
+We put *traits*, *types*, *examples* or other structures in their own directories. Main RAML specification file should be named `api.raml`.
+Sample directory structure:
 
 ```text
-{your_api_name}
-|	api.raml
-└───traits
-	|	some-trait.raml
-	|	other-trait.raml
-	types
-	|	my-type.raml
-	|	another-type.raml
-	examples
-	|	one-example.json
+{api_name}/
+├── api.raml
+├── examples
+│   └── one-example.json
+├── traits
+│   ├── other-trait.raml
+│   └── some-trait.raml
+└── types
+    ├── another-type.raml
+    └── my-type.raml
 ```
-{your_api_name} - the name of API this RAML specification is created for. (i.e. account, transfer, category, etc.)
+
+Where `{api_name}` is the name of the API this RAML specification is created for (e.g. account, transfer, category).
 
 ## Specification guidelines
 
