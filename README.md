@@ -36,7 +36,7 @@
 
 ## Why?
 
-These conventions are needed to standartize RAML specifications.
+These conventions are needed to standardize RAML specifications.
 
 Main goal is to have RAML API specification, which can be consumed to generate API Clients or API Servers whithout any custom tweaking.
 
